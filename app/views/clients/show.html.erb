@@ -1,0 +1,97 @@
+<div style="width: 95%; margin: 0 auto;">
+
+<p id="notice"><%= notice %></p>
+
+
+<h2 align="center">Client: <%= @client.name %></h2>
+
+<div class="well col-xs-8 col-xs-offset-2">
+
+  <h4 class=" description">Serial No:</h4>
+  <%= simple_format(@client.serial_no) %>
+  <hr>
+
+  <h4 class=" description">Phone Number:</h4>
+  <%= simple_format(@client.phone) %>
+  <hr>
+
+  <h4 class=" description">Type:</h4>
+  <%= simple_format(@client.type_name) %>
+  <hr>
+
+  <h4 class=" description">Arm Length:</h4>
+  <%= simple_format(@client.arm) %>
+  <hr>
+
+  <h4 class=" description">Shoulder Length:</h4>
+  <%= simple_format(@client.shoulder) %>
+  <hr>
+
+  <h4 class=" description">Arm Hole Length:</h4>
+  <%= simple_format(@client.arm_hole) %>
+  <hr>
+
+  <h4 class=" description">Neck Line Length:</h4>
+  <%= simple_format(@client.neck_line) %>
+  <hr>
+
+  <h4 class=" description">Chest Length:</h4>
+  <%= simple_format(@client.chest) %>
+  <hr>
+
+  <h4 class=" description">Waist Length:</h4>
+  <%= simple_format(@client.waist) %>
+  <hr>
+
+  <h4 class=" description">Skirt Length:</h4>
+  <%= simple_format(@client.skirt) %>
+  <hr>
+
+  <h4 class=" description">Shalwaar Length:</h4>
+  <%= simple_format(@client.shalwar) %>
+  <hr>
+
+  <h4 class=" description">Paincha Length:</h4>
+  <%= simple_format(@client.paincha) %>
+  <hr>
+
+  <h4 class=" description">Description:</h4>
+  <%= simple_format(@client.description) %>
+  <hr>
+
+  <h4 class=" description">Front:</h4>
+  <%= simple_format(@client.front) %>
+  <hr>
+
+  <h4 class=" description">Side Length:</h4>
+  <%= simple_format(@client.side) %>
+  <hr>
+
+  <h4 class=" description">Hip Length:</h4>
+  <%= simple_format(@client.hip) %>
+  <hr>
+
+  <h4 class=" description"> Collar or Bayn:</h4>
+  <%= simple_format(@client.collar_ban) %>
+  <hr>
+
+  <h4 class=" description"> Cuff:</h4>
+  <%= simple_format(@client.cuff) %>
+  <hr>
+
+  <h4 class=" description"> plate:</h4>
+  <%= simple_format(@client.plate) %>
+  <hr>
+
+
+  <div class="clients-actions">
+
+    <%= link_to "Edit this clients", edit_client_path(@client), class: "btn btn-xs btn-primary" %>  &nbsp;
+    <%= link_to "Delete this clients", clients_path(@client), method: :delete, data: { confirm: "Are you sure you want to delete the clients?"}, class: "btn btn-xs btn-danger" %>  &nbsp;
+    <%= link_to "View all clients", clients_path, class: "btn btn-xs btn-success" %>
+
+  </div>
+<br>
+
+</div>
+</div>

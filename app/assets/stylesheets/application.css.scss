@@ -1,0 +1,129 @@
+
+
+
+#logo:hover {
+
+  color: #2E2F30;
+
+  text-decoration: none;
+
+}
+.center {
+
+  text-align: center;
+
+}
+
+.jumbotron {
+
+
+  background-image: url("jumbotron_bg.png");
+  background-size: cover;
+
+  height: 600px;
+
+}
+
+.jumbotron h1 {
+
+  color: #333333;
+
+  text-align: center;
+
+  margin-bottom: 30px;
+
+  letter-spacing: -1px;
+
+  font-weight: bold;
+
+}
+
+
+.nav-item  {
+  padding: 15px;
+}
+
+
+
+.d-flex   {
+  padding: 10px;
+}
+
+.center{
+  text-align: center;
+}
+footer {
+  margin-top: 45px;
+  padding-top: 5px ;
+  border-top: 2px solid #eaeaea;
+  color: #cc0000;
+}
+footer a:hover {
+
+  color: #222;
+
+}
+
+footer small {
+
+  float: left;
+
+}
+
+footer ul {
+
+  float: right;
+
+  list-style: none;
+
+}
+
+footer ul li {
+
+  float: left;
+
+  margin-left: 15px;
+
+}
+client-actions {
+
+  border-top: 1px  #eaeaea;
+
+  padding-top: 5px;
+
+}
+
+.description {
+
+  margin-top: 0;
+
+}
+
+.client-title {
+
+  font-weight: bold;
+
+  font-size: 1.5em;
+
+}
+
+.client-body {
+
+  border-top: 1px solid #eaeaea;
+
+  padding-top: 15px;
+
+  padding-bottom: 15px;
+
+}
+
+.client-meta-details {
+
+  border-top: 1px solid #eaeaea;
+
+  margin-top: 15px;
+
+}
+.s1{
+  padding: 200px;
+}

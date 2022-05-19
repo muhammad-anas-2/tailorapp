@@ -1,0 +1,249 @@
+
+<div class="row " >
+  <div class ="col-md-12">
+
+    <%= form_for @clients, html:  {class:'form-horizontal',role: 'form'} do |f|%>
+      <% if @clients.errors.any? %>
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-2">
+            <div class="panel panel-danger">
+              <div class="panel-heading">
+                <h2 class="panel-title">
+                  <%= pluralize(@clients.errors.count, "error") %>
+                  prohibited this client from being saved:
+                </h2>
+                <div class="panel-body">
+                  <ul>
+                    <% @clients.errors.full_messages.each do |msg| %>
+                      <li><%= msg %></li>
+                    <% end %>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+
+      <strong>Personal Information:</strong>
+      <br>
+      <br>
+      <div class="row text-decoration-none">
+        <div class="col-md-4">
+          <div class="control-label col-sm-6">
+            <%= f.label :name %>
+          </div>
+          <div class="col-sm-11">
+            <%= f.text_field :name, class: "form-control" , placeholder: "Title of client", autofocus: true%>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="control-label col-sm-6">
+            <%= f.label :serial_no %>
+          </div>
+          <div class="col-sm-11">
+            <%= f.text_field :serial_no, class: "form-control", placeholder: "Serial no. of client" %>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="control-label col-sm-6">
+            <%= f.label :phone %>
+          </div>
+          <div class="col-sm-11">
+            <%= f.text_field :phone, class: "form-control", placeholder: "Phone Number" %>
+          </div>
+        </div>
+      </div>
+      <br>
+      <strong>Chart Type:</strong>
+      <br>
+      <br>
+      <div class="row text-decoration-none">
+
+        <div class="col-md-3">
+          <div class="control-label col-sm-6">
+            <%= f.label :type_name %>
+          </div>
+          <div class="col-sm-11">
+            <%#= f.text_field :type_name , class: "form-control", placeholder: "Serial no. of client" %>
+            <%= f.select :type_name, options_for_select([['Choose..'],['Pant'], ['Shirt']]) %>
+
+          </div>
+        </div>
+      </div>
+      <br>
+      <strong>Chart Info:</strong>
+      <br>
+      <br>
+      <div class="row text-decoration-none">
+        <div class="col-md-3">
+          <div class="control-label col-sm-6">
+            <%= f.label :arm %>
+          </div>
+          <div class="col-sm-11">
+            <%= f.text_field :arm, class: "form-control", placeholder: "length of arm" %>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="control-label col-sm-6">
+            <%= f.label :arm_hole %>
+          </div>
+          <div class="col-sm-11">
+            <%= f.text_field :arm_hole, class: "form-control", placeholder: "length of arm hole" %>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="control-label col-sm-6">
+            <%= f.label :shoulder %>
+          </div>
+          <div class="col-sm-11">
+            <%= f.text_field :shoulder, class: "form-control", placeholder: "Length of shoulder " %>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="control-label col-sm-6">
+            <%= f.label :neck_line %>
+          </div>
+          <div class="col-sm-11">
+            <%= f.text_field :neck_line, class: "form-control", placeholder: "Length of neck line" %>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="control-label col-sm-6">
+            <%= f.label :chest %>
+          </div>
+          <div class="col-sm-11">
+            <%= f.text_field :chest, class: "form-control", placeholder: "length of chest" %>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="control-label col-sm-6">
+            <%= f.label :skirt %>
+          </div>
+          <div class="col-sm-11">
+            <%= f.text_field :skirt, class: "form-control", placeholder: "Length of skirt" %>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="control-label col-sm-6">
+            <%= f.label :waist %>
+          </div>
+          <div class="col-sm-11">
+            <%= f.text_field :waist, class: "form-control", placeholder: "Waist" %>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="control-label col-sm-6">
+            <%= f.label :shalwar %>
+          </div>
+          <div class="col-sm-11">
+            <%= f.text_field :shalwar, class: "form-control", placeholder: "Length of shalwar" %>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="control-label col-sm-6">
+            <%= f.label :paincha %>
+          </div>
+          <div class="col-sm-11">
+            <%= f.text_field :paincha, class: "form-control", placeholder: "Length of paincha" %>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="control-label col-sm-6">
+            <%= f.label :front %>
+          </div>
+          <div class="col-sm-11">
+            <%= f.text_field :front, class: "form-control", placeholder: "Front Length" %>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="control-label col-sm-6">
+            <%= f.label :side %>
+          </div>
+          <div class="col-sm-11">
+            <%= f.text_field :side, class: "form-control", placeholder: "Side Length" %>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="control-label col-sm-6">
+            <%= f.label :hip %>
+          </div>
+          <div class="col-sm-11">
+            <%= f.text_field :hip, class: "form-control", placeholder: "Hip Length" %>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="control-label col-sm-6">
+            <%= f.label :collar_ban %>
+          </div>
+          <div class="col-sm-11">
+            <%#= f.text_field :collar_ban, class: "form-control", placeholder: "Yes or No" %>
+            <%= f.select :collar_ban, options_for_select([['Choose..'],['Collar'], ['Bayn']]) %>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="control-label col-sm-6">
+            <%= f.label :cuff %>
+          </div>
+          <div class="col-sm-11">
+            <%#= f.text_field :cuff, class: "form-control", placeholder: "Yes or No" %>
+            <%= f.select :cuff, options_for_select([['Choose..'],['Yes'], ['No']]) %>
+
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="control-label col-sm-6">
+            <%= f.label :plate %>
+          </div>
+          <div class="col-sm-11">
+            <%#= f.text_field :plate, class: "form-control", placeholder: "yes or No" %>
+            <%= f.select :plate, options_for_select([['Choose..'],['Yes'], ['No']]) %>
+
+          </div>
+        </div>
+
+
+      </div>
+      <br>
+      <br>
+
+      <div class="form-group text-decoration-none">
+
+        <div class="col-md-3">
+
+          <%= f.submit class: 'btn btn-primary btn-lg' %>
+
+        </div>
+
+      </div>
+    <% end %>
+
+
+
+
+<!--    <div class="col-md-3">-->
+
+<!--      [ <%#= link_to "Cancel request and return to clients listing", clients_path %> ]-->
+<!--    </div>-->
+  </div>
+<br>
+</div>
+<br>
+

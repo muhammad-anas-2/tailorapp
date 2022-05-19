@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  serial_no: MyString
+  phone: MyString
+  type_name: MyString
+  arm: MyString
+  shoulder: MyString
+  arm_hole: MyString
+  neck_line: MyString
+  chest: MyString
+  waist: MyString
+  skirt: MyString
+  shalwar: MyString
+  paincha: MyString
+  description: MyText
+  front: MyString
+  side: MyString
+  hip: MyString
+  collar_ban: MyString
+  cuff: MyString
+  plate: MyString
+
+two:
+  name: MyString
+  serial_no: MyString
+  phone: MyString
+  type_name: MyString
+  arm: MyString
+  shoulder: MyString
+  arm_hole: MyString
+  neck_line: MyString
+  chest: MyString
+  waist: MyString
+  skirt: MyString
+  shalwar: MyString
+  paincha: MyString
+  description: MyText
+  front: MyString
+  side: MyString
+  hip: MyString
+  collar_ban: MyString
+  cuff: MyString
+  plate: MyString

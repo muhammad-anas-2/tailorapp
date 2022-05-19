@@ -1,0 +1,68 @@
+<%#= form_tag(Client, method: :get) do %>
+<!--  <p> Search for a client </p>-->
+  <%#= text_field_tag(:search, params[:search]) %>
+  <%#= submit_tag("Search") %>
+<%# end %>
+
+
+<table class="table table-hover text-decoration-none">
+  <thead>
+  <tr>
+
+    <th scope="col">#</th>
+    <th scope="col">Name</th>
+    <th scope="col">Serial No</th>
+    <th scope="col">Phone</th>
+    <th scope="col">Actions</th>
+  </tr>
+  </thead>
+  <% @clients.each do |client| %>
+  <tbody>
+  <tr>
+    <th><%= link_to client.id, client_path(client), class: "text-decoration-none"%></th>
+    <td><%= link_to client.name, client_path(client), class: "text-decoration-none" %></td>
+    <td><%= link_to client.serial_no, client_path(client), class: "text-decoration-none" %></td>
+    <td><%= link_to client.phone, client_path(client), class: "text-decoration-none" %></td>
+    <td>
+      <div class="client-actions">
+        <%= link_to "", client_path(client), class: "fa-solid fa-eye text-decoration-none" %> &nbsp;
+        <%= link_to " ", edit_client_path(client), class: "fas fa-edit text-decoration-none" ,alt: 'Edit' %> &nbsp;
+        <%= link_to "", client_path(client), method: :delete,
+
+                    data: { confirm: "Are you sure you want to delete the client?"},
+
+                    class: "fa-solid fa-trash-can text-decoration-none", alt: 'Delete' %>
+
+      </div>
+    </td>
+  </tr>
+
+  </tbody>
+  <% end %>
+</table>
+<br>
+<br>
+<%#= will_paginate( @clients, render: BootstrapPagination::Rails , class: 'pagination-lg')%>
+<div class="container pagination justify-content-center" >
+
+</div>
+<br>
+
+
+
+<!--<div class="demo">-->
+<!--  <nav class="pagination-outer" aria-label="Page navigation">-->
+<!--    <ul class="pagination">-->
+<!--      <li class="page-item">-->
+<!--        <a>-->
+          <%#= paginate @clients, class: "page-link" %>
+<!--        </a>-->
+<!--      </li>-->
+<!--    </ul>-->
+<!--  </nav>-->
+<!--</div>-->
+
+
+
+
+
