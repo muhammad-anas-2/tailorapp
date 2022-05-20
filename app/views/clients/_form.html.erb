@@ -213,6 +213,15 @@
 
         <div class="col-md-3">
           <div class="control-label col-sm-6">
+            <%= f.label :description %>
+          </div>
+          <div class="col-sm-11">
+            <%= f.text_area :description, class: "form-control", placeholder: "Additional Information" %>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="control-label col-sm-6">
             <%= f.label :collar_ban %>
           </div>
           <div class="col-sm-11">
@@ -248,9 +257,9 @@
       </div>
       <br>
 
-      <div class="form-group text-decoration-none">
+      <div class="form-group">
 
-        <div class="col-sm-offset-2 col-sm-10">
+        <div class="col-md-3">
 
           <%= f.submit class: 'btn btn-primary btn-lg' %>
 
@@ -259,10 +268,9 @@
       </div>
     <% end %>
     <div class="col-xs-4 col-xs-offset-4">
-
       [ <%= link_to "Cancel request and return to clients listing", clients_path %> ]
-
     </div>
   </div>
+  <br>
 </div>
 

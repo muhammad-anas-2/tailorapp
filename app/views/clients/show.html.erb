@@ -1,97 +1,88 @@
 <div style="width: 95%; margin: 0 auto;">
+  <p id="notice"><%= notice %></p>
 
-<p id="notice"><%= notice %></p>
+      <h3 align= "right">
+        <div class="clients-actions">
 
+          <%= link_to " ", edit_client_path(@client), class: "fas fa-edit text-decoration-none" %>  &nbsp;
+          <%= link_to " ", clients_path(@client), method: :delete, data: { confirm: "Are you sure you want to delete the clients?"}, class: "fa-solid fa-trash-can text-decoration-none" %>  &nbsp;
+        </div>
+      </h3>
 
-<h2 align="center">Client: <%= @client.name %></h2>
+      <div class=" col-xs-4 col-xs-offset-0">
+        <h2 align="left">Client: <%= @client.name %></h2>
+      </div>
+      <div class=" col-xs-4 col-xs-offset-0">
+        <h2 align="left">Serial No: <%= @client.serial_no %></h2>
+      </div>
+      <div class=" col-xs-4 col-xs-offset-0">
+        <h2 align="left">Phone: <%= @client.phone %></h2>
+      </div>
+      <div class=" col-xs-12 col-xs-offset-0">
+        <h2 align="left">Chart Type: <%= @client.type_name %></h2>
+      </div>
 
-<div class="well col-xs-8 col-xs-offset-2">
+      <div class="well col-xs-4 col-xs-offset-0">
 
-  <h4 class=" description">Serial No:</h4>
-  <%= simple_format(@client.serial_no) %>
-  <hr>
+        <h4 class=" description">Arm Length: <%= @client.arm %></h4>
+        <hr>
 
-  <h4 class=" description">Phone Number:</h4>
-  <%= simple_format(@client.phone) %>
-  <hr>
+        <h4 class=" description">Shoulder Length: <%= @client.shoulder %></h4>
+        <hr>
 
-  <h4 class=" description">Type:</h4>
-  <%= simple_format(@client.type_name) %>
-  <hr>
+        <h4 class=" description">Neck Line Length:   <%= @client.neck_line %></h4>
+        <hr>
 
-  <h4 class=" description">Arm Length:</h4>
-  <%= simple_format(@client.arm) %>
-  <hr>
+        <h4 class=" description">Chest Length:   <%= @client.chest %></h4>
+        <hr>
 
-  <h4 class=" description">Shoulder Length:</h4>
-  <%= simple_format(@client.shoulder) %>
-  <hr>
+        <h4 class=" description">Arm Hole Length: <%= @client.arm_hole %></h4>
 
-  <h4 class=" description">Arm Hole Length:</h4>
-  <%= simple_format(@client.arm_hole) %>
-  <hr>
+      </div>
 
-  <h4 class=" description">Neck Line Length:</h4>
-  <%= simple_format(@client.neck_line) %>
-  <hr>
+      <div class="well col-xs-4 col-xs-offset-0">
 
-  <h4 class=" description">Chest Length:</h4>
-  <%= simple_format(@client.chest) %>
-  <hr>
+        <h4 class=" description">Waist Length:   <%= @client.waist %> </h4>
+        <hr>
 
-  <h4 class=" description">Waist Length:</h4>
-  <%= simple_format(@client.waist) %>
-  <hr>
+        <h4 class=" description">Skirt Length:   <%= @client.skirt %></h4>
+        <hr>
 
-  <h4 class=" description">Skirt Length:</h4>
-  <%= simple_format(@client.skirt) %>
-  <hr>
+        <h4 class=" description">Shalwaar Length:   <%= @client.shalwar %></h4>
+        <hr>
 
-  <h4 class=" description">Shalwaar Length:</h4>
-  <%= simple_format(@client.shalwar) %>
-  <hr>
+        <h4 class=" description">Paincha Length:   <%= @client.paincha %></h4>
+        <hr>
 
-  <h4 class=" description">Paincha Length:</h4>
-  <%= simple_format(@client.paincha) %>
-  <hr>
-
-  <h4 class=" description">Description:</h4>
-  <%= simple_format(@client.description) %>
-  <hr>
-
-  <h4 class=" description">Front:</h4>
-  <%= simple_format(@client.front) %>
-  <hr>
-
-  <h4 class=" description">Side Length:</h4>
-  <%= simple_format(@client.side) %>
-  <hr>
-
-  <h4 class=" description">Hip Length:</h4>
-  <%= simple_format(@client.hip) %>
-  <hr>
-
-  <h4 class=" description"> Collar or Bayn:</h4>
-  <%= simple_format(@client.collar_ban) %>
-  <hr>
-
-  <h4 class=" description"> Cuff:</h4>
-  <%= simple_format(@client.cuff) %>
-  <hr>
-
-  <h4 class=" description"> plate:</h4>
-  <%= simple_format(@client.plate) %>
-  <hr>
+        <h4 class=" description">Front:   <%= @client.front %></h4>
 
 
-  <div class="clients-actions">
+      </div>
 
-    <%= link_to "Edit this clients", edit_client_path(@client), class: "btn btn-xs btn-primary" %>  &nbsp;
-    <%= link_to "Delete this clients", clients_path(@client), method: :delete, data: { confirm: "Are you sure you want to delete the clients?"}, class: "btn btn-xs btn-danger" %>  &nbsp;
-    <%= link_to "View all clients", clients_path, class: "btn btn-xs btn-success" %>
+      <div class="well col-xs-4 col-xs-offset-0">
 
-  </div>
-<br>
+        <h4 class=" description">Side Length:  <%= @client.side %></h4>
+        <hr>
 
+        <h4 class=" description">Hip Length:  <%= @client.hip %></h4>
+        <hr>
+
+        <h4 class=" description"> Collar or Bayn:  <%= @client.collar_ban %></h4>
+        <hr>
+
+        <h4 class=" description"> Cuff:    <%= @client.cuff %></h4>
+        <hr>
+
+        <h4 class=" description"> plate: <%= @client.plate %></h4>
+
+      </div>
+
+
+      <div class="text-field col-xs-4 col-xs-offset-0">
+        <h4 class=" description">Description:</h4>
+        <%= simple_format(@client.description) %>
+        <hr>
+      </div>
+  <br>
 </div>
-</div>
+

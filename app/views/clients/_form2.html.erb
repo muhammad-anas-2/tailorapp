@@ -189,6 +189,15 @@
 
         <div class="col-md-3">
           <div class="control-label col-sm-6">
+            <%= f.label :description %>
+          </div>
+          <div class="col-sm-11">
+            <%= f.text_area :description, class: "form-control", placeholder: "Additional Information" %>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="control-label col-sm-6">
             <%= f.label :collar_ban %>
           </div>
           <div class="col-sm-11">
@@ -224,7 +233,7 @@
       <br>
       <br>
 
-      <div class="form-group text-decoration-none">
+      <div class="form-group ">
 
         <div class="col-md-3">
 
