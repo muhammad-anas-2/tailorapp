@@ -25,13 +25,13 @@
     <td><%= link_to client.phone, client_path(client), class: "text-decoration-none" %></td>
     <td>
       <div class="client-actions">
-        <%= link_to "", client_path(client), class: "fa-solid fa-eye text-decoration-none" %> &nbsp;
-        <%= link_to " ", edit_client_path(client), class: "fas fa-edit text-decoration-none" ,alt: 'Edit' %> &nbsp;
+        <%= link_to "", client_path(client), class: "fa-solid fa-eye text-decoration-none" , title: "Show client"%> &nbsp;
+        <%= link_to " ", edit_client_path(client), class: "fas fa-edit text-decoration-none" , title: "Edit client"%> &nbsp;
         <%= link_to "", client_path(client), method: :delete,
 
                     data: { confirm: "Are you sure you want to delete the client?"},
 
-                    class: "fa-solid fa-trash-can text-decoration-none", alt: 'Delete' %>
+                    class: "fa-solid fa-trash-can text-decoration-none", title: "Delete client" %>
 
       </div>
     </td>

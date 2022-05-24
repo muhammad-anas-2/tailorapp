@@ -15,6 +15,7 @@ gem "will_paginate"
 gem 'will_paginate-bootstrap'
 gem 'bootstrap4-kaminari-views'
 gem 'kaminari'
+gem 'bcrypt'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets

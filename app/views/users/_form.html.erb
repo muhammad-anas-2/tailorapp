@@ -1,0 +1,68 @@
+<%#=render 'shared/errors', obj: @students %>
+
+<div class="container right-gn">
+  <div class="row center sign-up-form">
+    <div class="col s12 m12 l12">
+      <div class="card-panel">
+        <h3 class="header"><strong><%= @users.new_record? ? "Create a new account" : "Edit your profile" %></strong></h3>
+
+
+        <div class="row">
+          <%= form_for(@users, html: {class: "col s12"}) do |f| %>
+            <div class = "row">
+              <div class="input-field col s12">
+                <%= f.label :name , class: "active"%>
+              </div>
+              <div class="input-field col s12">
+                <%= f.text_field :first_name, placeholder: "Enter your full name", autofocus: true  %>
+
+              </div>
+
+            </div>
+
+            <div class = "row">
+
+              <div class="input-field col s12">
+                <%= f.label :email , class: "active" %>
+              </div>
+
+              <div class="input-field col s12">
+                <%= f.text_field :email, placeholder: "Enter your email" %>
+              </div>
+
+            </div>
+
+            <div class = "row">
+              <div class="input-field col s12">
+                <%= f.label :password , class: "active" %>
+              </div>
+              <div class="input-field col s12">
+                <%= f.text_field :password, placeholder: "Choose a password"  %>
+              </div>
+            </div>
+
+            <div class = "row">
+              <div class="input-field col s12">
+                <%= f.label :password_confirmation , class:"active"%>
+              </div>
+              <div class="input-field col s12">
+                <%= f.text_field :password_confirmation, placeholder: "Confirm your password"  %>
+
+              </div>
+
+            </div>
+
+            <div class="row">
+              <div class="input-field col s12">
+                <%= f.button '<i class="material-icons right">arrow_forward</i>Submit'.html_safe,  class: "btn orange btn-large waves-effect waves-light right" %>
+              </div>
+            </div>
+
+
+          <%end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

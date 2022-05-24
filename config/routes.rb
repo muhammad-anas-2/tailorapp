@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   root 'welcome#home'
   get 'welcome/about'
   resources :clients
+  resources :users
+
 end
