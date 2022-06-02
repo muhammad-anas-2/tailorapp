@@ -4,5 +4,7 @@ Rails.application.routes.draw do
   get 'welcome/about'
   resources :clients
   resources :users
-
+  get 'login', to: 'logins#new'
+  post 'login', to: 'logins#create'
+  delete 'logout', to: 'logins#destroy'
 end

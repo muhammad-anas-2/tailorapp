@@ -6,6 +6,7 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all
+
   end
   def new
     @users = User.new
@@ -34,7 +35,7 @@ class UsersController < ApplicationController
     if @users.save
       # NewUserEmailMailer.with(users: @users).notify_user.deliver_now
       flash[:notice] = "You have successfully signed up"
-      redirect_to @users
+      redirect_to login_path
     else
       render 'new'
     end
@@ -45,7 +46,7 @@ end
 
 private
 def user_params
-  params.require(:user).permit(:name, :email, :password, :password_confirmation)
+  params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation )
 end
 
 # def require_same_student

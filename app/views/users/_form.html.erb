@@ -1,23 +1,75 @@
 <%#=render 'shared/errors', obj: @students %>
 
+
 <div class="container right-gn">
   <div class="row center sign-up-form">
-    <div class="col s12 m12 l12">
+    <div class="col-md-12">
       <div class="card-panel">
         <h3 class="header"><strong><%= @users.new_record? ? "Create a new account" : "Edit your profile" %></strong></h3>
 
 
         <div class="row">
-          <%= form_for(@users, html: {class: "col s12"}) do |f| %>
+          <%= form_for(@users, html: {class: "col-md-12"}) do |f| %>
+
+            <% if @users.errors.any? %>
+
+              <div class="row">
+
+                <div class="col-xs-8 col-xs-offset-2">
+
+                  <div class="panel panel-danger">
+
+                    <div class="panel-heading">
+
+                      <h2 class="panel-title">
+
+                        <%= pluralize(@users.errors.count, "error") %>
+
+                        prohibited this client from being saved:
+
+                      </h2>
+
+                      <div class="panel-body">
+
+                        <ul>
+
+                          <% @users.errors.full_messages.each do |msg| %>
+
+                            <li><%= msg %></li>
+
+                          <% end %>
+
+                        </ul>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            <% end %>
+
+
             <div class = "row">
               <div class="input-field col s12">
-                <%= f.label :name , class: "active"%>
+                <%= f.label :first_name , class: "active"%>
               </div>
               <div class="input-field col s12">
-                <%= f.text_field :first_name, placeholder: "Enter your full name", autofocus: true  %>
-
+                <%= f.text_field :first_name, placeholder: "Enter your first name", autofocus: true  %>
               </div>
+            </div>
 
+            <div class = "row">
+              <div class="input-field col s12">
+                <%= f.label :last_name , class: "active"%>
+              </div>
+              <div class="input-field col s12">
+                <%= f.text_field :last_name, placeholder: "Enter your last name", autofocus: true  %>
+              </div>
             </div>
 
             <div class = "row">
@@ -34,10 +86,10 @@
 
             <div class = "row">
               <div class="input-field col s12">
-                <%= f.label :password , class: "active" %>
+                <%= f.label :password_digest , class: "active" %>
               </div>
               <div class="input-field col s12">
-                <%= f.text_field :password, placeholder: "Choose a password"  %>
+                <%= f.text_field :password_digest, placeholder: "Choose a password"  %>
               </div>
             </div>
 
@@ -54,7 +106,7 @@
 
             <div class="row">
               <div class="input-field col s12">
-                <%= f.button '<i class="material-icons right">arrow_forward</i>Submit'.html_safe,  class: "btn orange btn-large waves-effect waves-light right" %>
+                <%= f.button 'Submit'.html_safe,  class: "btn orange btn-large waves-effect waves-light right" %>
               </div>
             </div>
 

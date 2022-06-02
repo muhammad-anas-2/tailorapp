@@ -1,6 +1,5 @@
 @import "bootstrap";
 
-
 /* Dropdown Button */
 .dropbtn {
   padding: 15px;
@@ -71,7 +70,7 @@
 
 .jumbotron {
 
-  background-image: asset_data_url('ruby.jpg');
+  background-image: url('jumbotron_bg.png');
 
   background-size: cover;
 
@@ -179,4 +178,6 @@ article-actions {
   margin-top: 15px;
 
 }
+
+
 
