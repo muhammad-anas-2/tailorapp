@@ -1,183 +1,182 @@
-@import "bootstrap";
+/*@import "bootstrap";*/
 
-/* Dropdown Button */
-.dropbtn {
-  padding: 15px;
+/*!* Dropdown Button *!*/
+/*.dropbtn {*/
+/*  padding: 15px;*/
 
-  color: #333333;
-  font-size: 13px;
-  border: none;
-}
+/*  color: #333333;*/
+/*  font-size: 13px;*/
+/*  border: none;*/
+/*}*/
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
+/*!* The container <div> - needed to position the dropdown content *!*/
+/*.dropdown {*/
+/*  position: relative;*/
+/*  display: inline-block;*/
+/*}*/
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
+/*!* Dropdown Content (Hidden by Default) *!*/
+/*.dropdown-content {*/
+/*  display: none;*/
+/*  position: absolute;*/
+/*  background-color: #f1f1f1;*/
+/*  min-width: 160px;*/
+/*  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+/*  z-index: 1;*/
+/*}*/
 
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
+/*!* Links inside the dropdown *!*/
+/*.dropdown-content a {*/
+/*  color: black;*/
+/*  padding: 12px 16px;*/
+/*  text-decoration: none;*/
+/*  display: block;*/
+/*}*/
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #08808A;}
+/*!* Change color of dropdown links on hover *!*/
+/*.dropdown-content a:hover {background-color: #08808A;}*/
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+/*!* Show the dropdown menu on hover *!*/
+/*.dropdown:hover .dropdown-content {display: block;}*/
 
-#logo {
+/*#logo {*/
 
-  float: left;
+/*  float: left;*/
 
-  font-size: 3em;
+/*  font-size: 3em;*/
 
-  color: #333333;
+/*  color: #333333;*/
 
-  text-transform: uppercase;
+/*  text-transform: uppercase;*/
 
-  letter-spacing: -1px;
+/*  letter-spacing: -1px;*/
 
-  font-weight: bold;
+/*  font-weight: bold;*/
 
-}
+/*}*/
 
-#logo:hover {
+/*#logo:hover {*/
 
-  color: #fff;
+/*  color: #fff;*/
 
-  text-decoration: none;
+/*  text-decoration: none;*/
 
-}
-.center {
+/*}*/
+/*.center {*/
 
-  text-align: center;
+/*  text-align: center;*/
 
-}
+/*}*/
 
-.jumbotron {
+/*.jumbotron {*/
 
-  background-image: url('jumbotron_bg.png');
+/*  background-image: url('jumbotron_bg.png');*/
 
-  background-size: cover;
+/*  background-size: cover;*/
 
-  height: 600px;
+/*  height: 600px;*/
 
-}
+/*}*/
 
-.jumbotron h1 {
+/*.jumbotron h1 {*/
 
-  color: #F7F7F7;
+/*  color: #F7F7F7;*/
 
-  text-align: center;
+/*  text-align: center;*/
 
-  margin-bottom: 30px;
+/*  margin-bottom: 30px;*/
 
-  letter-spacing: -1px;
+/*  letter-spacing: -1px;*/
 
-  font-weight: bold;
+/*  font-weight: bold;*/
 
-}
+/*}*/
 
 
-.nav-item  {
-  padding: 15px;
-}
+/*.nav-item  {*/
+/*  padding: 15px;*/
+/*}*/
 
 
 
-.d-flex   {
-  padding: 10px;
-}
+/*.d-flex   {*/
+/*  padding: 10px;*/
+/*}*/
 
-.center{
-  text-align: center;
-}
-footer {
-  margin-top: 45px;
-  padding-top: 5px ;
-  border-top: 2px solid #eaeaea;
-  color: #cc0000;
-}
-footer a:hover {
+/*.center{*/
+/*  text-align: center;*/
+/*}*/
+/*footer {*/
+/*  margin-top: 45px;*/
+/*  padding-top: 5px ;*/
+/*  border-top: 2px solid #eaeaea;*/
+/*  color: #cc0000;*/
+/*}*/
+/*footer a:hover {*/
 
-  color: #222;
+/*  color: #222;*/
 
-}
+/*}*/
 
-footer small {
+/*footer small {*/
 
-  float: left;
+/*  float: left;*/
 
-}
+/*}*/
 
-footer ul {
+/*footer ul {*/
 
-  float: right;
+/*  float: right;*/
 
-  list-style: none;
+/*  list-style: none;*/
 
-}
+/*}*/
 
-footer ul li {
+/*footer ul li {*/
 
-  float: left;
+/*  float: left;*/
 
-  margin-left: 15px;
+/*  margin-left: 15px;*/
 
-}
-article-actions {
+/*}*/
+/*article-actions {*/
 
-  border-top: 1px  #eaeaea;
+/*  border-top: 1px  #eaeaea;*/
 
-  padding-top: 5px;
+/*  padding-top: 5px;*/
 
-}
+/*}*/
 
-.description {
+/*.description {*/
 
-  margin-top: 0;
+/*  margin-top: 0;*/
 
-}
+/*}*/
 
-.article-title {
+/*.article-title {*/
 
-  font-weight: bold;
+/*  font-weight: bold;*/
 
-  font-size: 1.5em;
+/*  font-size: 1.5em;*/
 
-}
+/*}*/
 
-.article-body {
+/*.article-body {*/
 
-  border-top: 1px solid #eaeaea;
+/*  border-top: 1px solid #eaeaea;*/
 
-  padding-top: 15px;
+/*  padding-top: 15px;*/
 
-  padding-bottom: 15px;
+/*  padding-bottom: 15px;*/
 
-}
+/*}*/
 
-.article-meta-details {
+/*.article-meta-details {*/
 
-  border-top: 1px solid #eaeaea;
+/*  border-top: 1px solid #eaeaea;*/
 
-  margin-top: 15px;
+/*  margin-top: 15px;*/
 
-}
-
+/*}*/
 
 

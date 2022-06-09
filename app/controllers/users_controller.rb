@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-  skip_before_action  only:[ :new , :create]
+  skip_before_action  :require_user, only:[ :new , :create]
   # before_action :require_same_student, only: [:edit, :update]
 
 

@@ -1,11 +1,70 @@
-<div  style="width: 95%; margin: 0 auto;">
+<body id="body-pd">
 
-<p id="notice"><%= notice %></p>
+<header class="header" id="header">
+  <div class="header_toggle">
+    <i class='bx bx-menu' id="header-toggle"></i>
+  </div>
+  <!--  <div class="header_img"> <img src="https://i.imgur.com/hczKIze.jpg" alt=""> </div>-->
+  <form class='form-inline ' >
+    <div class="input-group text-decoration-none">
+          <input type='text' id='search' class="form-control search-form " placeholder="Search">
+          <span class="input-group-btn" style="width:39px">
+              <button id="search-this"type="button" class="pull-right btn btn-default search-btn ">
+                  <i class="fa fa-search"></i>
+              </button>
+          </span>
+    </div>
+  </form>
+  <div class="d-grid gap-2 d-md-block" style="float:right;">
+<!--    <button class="btn btn-primary" type="button">New Customer</button>-->
+    <%= link_to 'New Customer', new_client_path, class: "btn btn-primary", type: "button " %>
+  </div>
 
-<h1 align="center">Listing All Clients</h1>
 
-<%#= render 'article',  object_id: @articles %>
-<%= render 'clients/client2',  object_id: @clients %>
-
+</header> <div> <div> <div>
 
 </div>
+
+</div>
+
+</div>
+
+<div class="l-navbar" id="nav-bar">
+  <nav class="nav">
+    <div>
+      <%= link_to content_tag( :span, 'Tailor App'  ,class: 'nav_logo-name'), root_path, class:  "nav_logo bx bx-layer nav_logo-icon", :action=>"index"%>
+      <div class="nav_list">
+        <a href="" class="nav_link active">
+          <i class='bx bx-grid-alt nav_icon'></i>
+          <span class="nav_name">Dashboard</span>
+        </a>
+<!--        <a href="#" class="nav_link"><i class='bx bx-user nav_icon'></i><span class="nav_name">Users</span>-->
+          <%= link_to content_tag( :span, 'Users'  ,class: 'nav_name'), user_path(current_user) , class:  "bx bx-user nav_icon nav_link", :action=>"edit"%>
+
+        </a>
+        <!--        <a href="#" class="nav_link">-->
+        <!--          <i class='bx bx-message-square-detail nav_icon'></i>-->
+        <!--          <span class="nav_name">Messages</span>-->
+        <!--        </a> <a href="#" class="nav_link">-->
+        <!--        <i class='bx bx-bookmark nav_icon'></i>-->
+        <!--        <span class="nav_name">Bookmark</span> </a>-->
+        <!--        <a href="#" class="nav_link">-->
+        <!--          <i class='bx bx-folder nav_icon'></i>-->
+        <!--          <span class="nav_name">Files</span>-->
+        <!--        </a> <a href="#" class="nav_link">-->
+        <!--        <i class='bx bx-bar-chart-alt-2 nav_icon'></i>-->
+        <!--        <span class="nav_name">Stats</span>-->
+        <!--      </a>-->
+      </div>
+    </div>
+<!--    <a href="#" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">SignOut</span> </a>-->
+    <%= link_to content_tag( :span, 'SignOut'  ,class: 'nav_name'),logout_path, method: :delete , class:  "bx bx-log-out nav_icon nav_link", :action=>"index"%>
+
+  </nav>
+</div>
+<!--Container Main start-->
+<div class="height-100 bg-light">
+  <h4>Listing all clients</h4>
+  <%= render 'clients/client2',  object_id: @clients %>
+</div>
+<!--Container Main end-->

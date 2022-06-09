@@ -10,7 +10,7 @@ class LoginsController < ApplicationController
       session[:user_id] = user.id
       flash[:notice] = 'You have successfully logged in'
 
-      redirect_to user
+      redirect_to clients_path
 
        else
             flash.now[:alert] = 'Something is wrong with your login information'

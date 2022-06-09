@@ -1,31 +1,39 @@
-<div class="row sign-up-form">
+<div class="container bootdey flex-grow-1 container-p-y">
 
-    <div class="col s6 m6">
-      <div class="card blue-grey darken-1">
-        <div class="card-content white-text">
-            <span class="card-title">  Full Name: <%= @users.first_name %> &nbsp; <%= @users.last_name %></span>
-
-<!--          <p>Email: <%#= @users.email %></p>-->
-<!--                    <p>Course Enrollments: <%# if @users.courses.empty? %>-->
-<!--                         None-->
-                    <%#else %>
-<!--                      <ul>-->
-                        <%# @users.courses.each do |course| %>
-<!--                        <li> <%#= course.name %></li>-->
-                          <%#end %>
-
-<!--                      </ul>-->
-                      <%#end %>
-
-<!--                    </p>-->
-        </div>
-
-      </div>
-      <%# if current_user == @users %>
-      <%#= link_to '<i class="material-icons right">create</i> Edit your profile'.html_safe, edit_student_path(@users), class: "waves-effect waves-light btn" %>
-      <%#end %>
+  <div class="media align-items-center py-3 mb-3">
+    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="d-block ui-w-100 rounded-circle">
+    <div class="media-body ml-4">
+      <h4 class="font-weight-bold mb-0"><%= @users.first_name %>&nbsp;<%= @users.last_name %></h4>
+<!--      <a href="javascript:void(0)" class="btn btn-primary btn-sm">Edit</a>&nbsp;-->
+<!--      <a href="javascript:void(0)" class="btn btn-default btn-sm">Profile</a>&nbsp;-->
+<!--      <a href="javascript:void(0)" class="btn btn-default btn-sm icon-btn"><i class="fa fa-mail"></i></a>-->
     </div>
+  </div>
+  <div class="card ml-4 ">
+    <hr class="border-light m-0">
+    <div class="card-body">
 
+      <table class="table user-view-table m-0">
+        <tbody>
+        <tr>
+          <td>First Name</td>
+          <td><%= @users.first_name %></td>
+        </tr>
+        <tr>
+          <td>Last Name:</td>
+          <td><%= @users.last_name %></td>
+        </tr>
+        <tr>
+          <td>E-mail:</td>
+          <td><%= @users.email%></td>
+        </tr>
 
-
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <br>
+  <%= link_to " Edit ", edit_user_path(current_user), class: "btn btn-primary waves-effect waves-light right" , title: "Edit"%>
+  <%= link_to 'Back', clients_path(current_user) ,class: "btn btn-primary waves-effect waves-light right" %>
+a
 </div>

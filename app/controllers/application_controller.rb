@@ -13,7 +13,7 @@ class ApplicationController < ActionController::Base
   end
 
   def require_user
-    unless logged_in?
+    if  !logged_in?
       flash[:notice] = "Account is created successfully. You must be logged in now to perform actions "
       redirect_to login_path
     end
