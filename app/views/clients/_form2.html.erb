@@ -25,47 +25,47 @@
         </div>
       <% end %>
 
-      <strong>Personal Information:</strong>
+      <strong><%= t "clients.show.personal" %>:</strong>
       <br>
       <br>
       <div class="row text-decoration-none">
         <div class="col-md-4">
           <div class="control-label col-sm-6">
-            <%= f.label :name %>
+            <%= f.label t "clients.show.c" %>
           </div>
           <div class="col-sm-11">
-            <%= f.text_field :name, class: "form-control" , placeholder: "Title of client", autofocus: true%>
+            <%= f.text_field :name, class: "form-control" ,placeholder: "#{I18n.t 'clients.show.c_placeholder'}", autofocus: true%>
           </div>
         </div>
 
 
         <div class="col-md-4">
           <div class="control-label col-sm-6">
-            <%= f.label :serial_no %>
+            <%= f.label t "clients.show.s" %>
           </div>
           <div class="col-sm-11">
-            <%= f.text_field :serial_no, class: "form-control", placeholder: "Serial no. of client" %>
+            <%= f.text_field :serial_no, class: "form-control", placeholder: "#{I18n.t 'clients.show.s_placeholder'}" %>
           </div>
         </div>
 
         <div class="col-md-4">
           <div class="control-label col-sm-6">
-            <%= f.label :phone %>
+            <%= f.label t "clients.show.p" %>
           </div>
           <div class="col-sm-11">
-            <%= f.text_field :phone, class: "form-control", placeholder: "Phone Number" %>
+            <%= f.text_field :phone, class: "form-control", placeholder: "#{I18n.t 'clients.show.p_placeholder'}" %>
           </div>
         </div>
       </div>
       <br>
-      <strong>Chart Type:</strong>
+      <strong><%= t "clients.show.chart" %></strong>
       <br>
       <br>
       <div class="row text-decoration-none">
 
         <div class="col-md-3">
           <div class="control-label col-sm-6">
-            <%= f.label :type_name %>
+            <%= f.label t "clients.show.type" %>
           </div>
           <div class="col-sm-11">
             <%#= f.text_field :type_name , class: "form-control", placeholder: "Serial no. of client" %>
@@ -81,124 +81,124 @@
       <div class="row text-decoration-none">
         <div class="col-md-3">
           <div class="control-label col-sm-6">
-            <%= f.label :arm %>
+            <%= f.label  t "clients.show.Arm" %>
           </div>
           <div class="col-sm-11">
-            <%= f.text_field :arm, class: "form-control", placeholder: "length of arm" %>
+            <%= f.text_field :arm, class: "form-control"%>
           </div>
         </div>
 
         <div class="col-md-3">
           <div class="control-label col-sm-6">
-            <%= f.label :arm_hole %>
+            <%= f.label t "clients.show.Armhole" %>
           </div>
           <div class="col-sm-11">
-            <%= f.text_field :arm_hole, class: "form-control", placeholder: "length of arm hole" %>
+            <%= f.text_field :arm_hole, class: "form-control" %>
           </div>
         </div>
 
         <div class="col-md-3">
           <div class="control-label col-sm-6">
-            <%= f.label :shoulder %>
+            <%= f.label t "clients.show.Shoulder" %>
           </div>
           <div class="col-sm-11">
-            <%= f.text_field :shoulder, class: "form-control", placeholder: "Length of shoulder " %>
+            <%= f.text_field :shoulder, class: "form-control"  %>
           </div>
         </div>
 
         <div class="col-md-3">
           <div class="control-label col-sm-6">
-            <%= f.label :neck_line %>
+            <%= f.label t "clients.show.Neck" %>
           </div>
           <div class="col-sm-11">
-            <%= f.text_field :neck_line, class: "form-control", placeholder: "Length of neck line" %>
+            <%= f.text_field :neck_line, class: "form-control" %>
           </div>
         </div>
 
         <div class="col-md-3">
           <div class="control-label col-sm-6">
-            <%= f.label :chest %>
+            <%= f.label t "clients.show.Chest" %>
           </div>
           <div class="col-sm-11">
-            <%= f.text_field :chest, class: "form-control", placeholder: "length of chest" %>
+            <%= f.text_field :chest, class: "form-control" %>
           </div>
         </div>
 
         <div class="col-md-3">
           <div class="control-label col-sm-6">
-            <%= f.label :skirt %>
+            <%= f.label t "clients.show.Skirt" %>
           </div>
           <div class="col-sm-11">
-            <%= f.text_field :skirt, class: "form-control", placeholder: "Length of skirt" %>
+            <%= f.text_field :skirt, class: "form-control" %>
           </div>
         </div>
 
         <div class="col-md-3">
           <div class="control-label col-sm-6">
-            <%= f.label :waist %>
+            <%= f.label t "clients.show.Waist" %>
           </div>
           <div class="col-sm-11">
-            <%= f.text_field :waist, class: "form-control", placeholder: "Waist" %>
+            <%= f.text_field :waist, class: "form-control" %>
           </div>
         </div>
 
         <div class="col-md-3">
           <div class="control-label col-sm-6">
-            <%= f.label :shalwar %>
+            <%= f.label t "clients.show.Shalwaar" %>
           </div>
           <div class="col-sm-11">
-            <%= f.text_field :shalwar, class: "form-control", placeholder: "Length of shalwar" %>
+            <%= f.text_field :shalwar, class: "form-control"  %>
           </div>
         </div>
 
         <div class="col-md-3">
           <div class="control-label col-sm-6">
-            <%= f.label :paincha %>
+            <%= f.label t "clients.show.Paincha" %>
           </div>
           <div class="col-sm-11">
-            <%= f.text_field :paincha, class: "form-control", placeholder: "Length of paincha" %>
+            <%= f.text_field :paincha, class: "form-control" %>
           </div>
         </div>
 
         <div class="col-md-3">
           <div class="control-label col-sm-6">
-            <%= f.label :front %>
+            <%= f.label t "clients.show.Front" %>
           </div>
           <div class="col-sm-11">
-            <%= f.text_field :front, class: "form-control", placeholder: "Front Length" %>
+            <%= f.text_field :front, class: "form-control"%>
           </div>
         </div>
 
         <div class="col-md-3">
           <div class="control-label col-sm-6">
-            <%= f.label :side %>
+            <%= f.label t "clients.show.Side"  %>
           </div>
           <div class="col-sm-11">
-            <%= f.text_field :side, class: "form-control", placeholder: "Side Length" %>
+            <%= f.text_field :side, class: "form-control" %>
           </div>
         </div>
 
         <div class="col-md-3">
           <div class="control-label col-sm-6">
-            <%= f.label :hip %>
+            <%= f.label t "clients.show.Hip" %>
           </div>
           <div class="col-sm-11">
-            <%= f.text_field :hip, class: "form-control", placeholder: "Hip Length" %>
+            <%= f.text_field :hip, class: "form-control" %>
           </div>
         </div>
 
         <div class="col-md-3">
           <div class="control-label col-sm-6">
-            <%= f.label :description %>
+            <%= f.label t "clients.show.Description"  %>
           </div>
           <div class="col-sm-11">
-            <%= f.text_area :description, class: "form-control", placeholder: "Additional Information" %>
+            <%= f.text_area :description, class: "form-control" %>
           </div>
         </div>
 
         <div class="col-md-3">
           <div class="control-label col-sm-6">
-            <%= f.label :collar_ban %>
+            <%= f.label t "clients.show.CollarorBayn" %>
           </div>
           <div class="col-sm-11">
             <%#= f.text_field :collar_ban, class: "form-control", placeholder: "Yes or No" %>
@@ -208,7 +208,7 @@
 
         <div class="col-md-3">
           <div class="control-label col-sm-6">
-            <%= f.label :cuff %>
+            <%= f.label t "clients.show.Cuff" %>
           </div>
           <div class="col-sm-11">
             <%#= f.text_field :cuff, class: "form-control", placeholder: "Yes or No" %>
@@ -219,7 +219,7 @@
 
         <div class="col-md-3">
           <div class="control-label col-sm-6">
-            <%= f.label :plate %>
+            <%= f.label t "clients.show.plate" %>
           </div>
           <div class="col-sm-11">
             <%#= f.text_field :plate, class: "form-control", placeholder: "yes or No" %>

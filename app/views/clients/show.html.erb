@@ -1,6 +1,7 @@
 <div style="width: 95%; margin: auto;">
         <p id="notice"><%= notice %></p>
-
+  <%= link_to 'English', client_path( locale: :en), class: "btn btn-primary", type: "button " %>
+  <%= link_to 'Urdu', client_path( locale: :ur), class: "btn btn-primary", type: "button " %>
             <h3 align= "right">
               <div class="clients-actions">
 
@@ -9,82 +10,82 @@
                 <%= link_to " ", clients_path(@client), method: :delete, data: { confirm: "Are you sure you want to delete the clients?"}, class: "fa-solid fa-trash-can text-decoration-none" , title: "Delete client"%>  &nbsp;
               </div>
             </h3>
-            <h1>Personal Information</h1>
+            <h1><%= t "clients.show.personal" %></h1>
         <br>
   <div class="container">
     <div class="row">
-      <div class="col"><h3>Client: <%= @client.name %></h3>
+      <div class="col"><h3><%= t "clients.show.c" %> <%= @client.name %></h3>
       </div>
-      <div class="col">Serial No: <%= @client.serial_no %>
+      <div class="col"><%= t "clients.show.s" %> <%= @client.serial_no %>
       </div>
 
-      <div class="col">Phone: <%= @client.phone %>
-      </div>
-    </div>
-
-     <br>
-
-    <div class="row">
-      <div class="col"><h3>Chart Type: <%= @client.type_name %></h3>
+      <div class="col"><%= t "clients.show.p" %> <%= @client.phone %>
       </div>
     </div>
 
      <br>
 
     <div class="row">
-      <div class="col">Arm Length: <%= @client.arm %>
+      <div class="col"><h3><%= t "clients.show.chart" %> <%= @client.type_name %></h3>
       </div>
-      <div class="col">Shoulder Length: <%= @client.shoulder %>
+    </div>
+
+     <br>
+
+    <div class="row">
+      <div class="col"><%= t "clients.show.Arm" %> <%= @client.arm %>
       </div>
-      <div class="col">Neck Line Length: <%= @client.neck_line %>
+      <div class="col"><%= t "clients.show.Shoulder" %> <%= @client.shoulder %>
+      </div>
+      <div class="col"><%= t "clients.show.Neck" %> <%= @client.neck_line %>
       </div>
     </div>
 
        <br>
 
       <div class="row">
-        <div class="col">Chest Length: <%= @client.chest %>
+        <div class="col"><%= t "clients.show.Chest" %><%= @client.chest %>
         </div>
-        <div class="col">Arm Hole Length: <%= @client.arm_hole %>
+        <div class="col"><%= t "clients.show.Armhole" %><%= @client.arm_hole %>
         </div>
-        <div class="col">Waist Length: <%= @client.waist %>
+        <div class="col"><%= t "clients.show.Waist" %> <%= @client.waist %>
         </div>
       </div>
 
        <br>
 
       <div class="row">
-        <div class="col">Skirt Length: <%= @client.skirt %>
+        <div class="col"><%= t "clients.show.Skirt" %> <%= @client.skirt %>
         </div>
-        <div class="col">Shalwaar Length: <%= @client.shalwar %>
+        <div class="col"><%= t "clients.show.Shalwaar" %> <%= @client.shalwar %>
         </div>
-        <div class="col">Paincha Length: <%= @client.paincha %>
+        <div class="col"><%= t "clients.show.Paincha" %> <%= @client.paincha %>
         </div>
       </div>
     <br>
 
         <div class="row">
-          <div class="col">Front: <%= @client.front %>
+          <div class="col"><%= t "clients.show.Front" %> <%= @client.front %>
           </div>
-          <div class="col">Side Length: <%= @client.side %>
+          <div class="col"><%= t "clients.show.Side" %> <%= @client.side %>
           </div>
-          <div class="col">Hip Length: <%= @client.hip %>
-          </div>
-        </div>
-    <br>
-
-        <div class="row">
-          <div class="col">Collar or Bayn: <%= @client.collar_ban %>
-          </div>
-          <div class="col">Cuff: <%= @client.cuff %>
-          </div>
-          <div class="col">Cuff: <%= @client.cuff %>
+          <div class="col"><%= t "clients.show.Hip" %><%= @client.hip %>
           </div>
         </div>
     <br>
 
         <div class="row">
-          <div class="col">plate: <%= @client.plate %>
+          <div class="col"><%= t "clients.show.CollarorBayn" %> <%= @client.collar_ban %>
+          </div>
+          <div class="col"><%= t "clients.show.Cuff" %> <%= @client.cuff %>
+          </div>
+          <div class="col"><%= t "clients.show.Cuff" %> <%= @client.cuff %>
+          </div>
+        </div>
+    <br>
+
+        <div class="row">
+          <div class="col"><%= t "clients.show.plate" %> <%= @client.plate %>
           </div>
         </div>
 
@@ -92,7 +93,7 @@
         <br>
 
         <div class="row">
-          <div class="col"><h3>Description:</h3> <%= @client.description %>
+          <div class="col"><h3><%= t "clients.show.Description" %></h3> <%= @client.description %>
           </div>
         </div>
     <br>

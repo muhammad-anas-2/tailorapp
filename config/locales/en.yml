@@ -20,4 +20,53 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  logins:
+    new:
+     hello: "Login"
+     services_html: "Don't have an account?"
+     services_html2: "Have already an account?"
+
+  clients:
+    index:
+      n: "Name"
+      s: "Serial no"
+      p: "Phone"
+    show:
+      personal: "Personal Information"
+      c: "Client:"
+      s: "Serial no:"
+      p: "Phone:"
+      chart: "Chart Type"
+      type: "Type name"
+      ChartInfo: "Chart Info"
+      Arm: "Arm Length:"
+      Shoulder: "Shoulder Length:"
+      Neck: "Neck Line: "
+      Chest: "Chest Length:"
+      Armhole: "Arm Hole Length:"
+      Waist: "Waist Length:"
+      Skirt: "Skirt Length:"
+      Shalwaar: "Shalwaar Length:"
+      Paincha: "Paincha Length:"
+      Front: "Front:"
+      Side: "Side Length:"
+      Hip: "Hip Length:"
+      CollarorBayn: "Collar or Bayn:"
+      Cuff: "Cuff:"
+      plate: "plate: "
+      Description: "Description:"
+      c_placeholder: "Title of client"
+      s_placeholder: "Serial no. of client"
+      p_placeholder: "Phone Number"
+
+  activerecord:
+    models: "Logins"
+    attributes:
+      new:
+        email: "Email"
+        e_placeholder: "Enter your email"
+        password: "Password"
+        p_placeholder: "Enter your password"
+        rp_placeholder: "Repeat your password"
+        fname_placeholder: "Enter your first name"
+        lname_placeholder: "Enter your last name"

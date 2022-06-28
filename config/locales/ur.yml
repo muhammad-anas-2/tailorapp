@@ -1,0 +1,53 @@
+ur:
+
+  logins:
+    new:
+     hello: "لوگن"
+     services_html: "اکاؤنٹ نہیں ہے؟"
+     services_html2: "پہلے سے ہی ایک اکاؤنٹ ہے؟"
+
+  clients:
+    index:
+      n: "نام"
+      s: "سیریل نمبر"
+      p: "فون"
+    show:
+      personal: "ذاتی معلومات"
+      c: "کلائنٹ:"
+      s: "سیریل نمبر:"
+      p: "فون:"
+      chart: "چارٹ کی قسم: "
+      type: "ٹائپ"
+      ChartInfo: "چارٹ کی معلومات"
+      Arm: "بازو کی لمبائی:"
+      Shoulder: "کندھے کی لمبائی:"
+      Neck: "گردن کی لمبائی:"
+      Chest: "سینے کی لمبائی:"
+      Armhole: "بازو کا سوراخ:"
+      Waist: "کمر کی لمبائی:"
+      Skirt: "سکرٹ کی لمبائی:"
+      Shalwaar: "شلوار کی لمبائی:"
+      Paincha: "پنچا کی لمبائی:"
+      Front: "سامنے:"
+      Side: "سائیڈ کی لمبائی:"
+      Hip:  "کولہے کی لمبائی:"
+      CollarorBayn: "کالر یا بے:"
+      Cuff: "کف:"
+      plate: "پلیٹ:"
+      Description: "تفصیل:"
+      c_placeholder: "کلائنٹ کا عنوان"
+      s_placeholder: "سیریل نمبر"
+      p_placeholder: "فون نمبر"
+
+
+  activerecord:
+    models: "Logins"
+    attributes:
+     new:
+       email: "ای میل"
+       password: "پاس ورڈ"
+       e_placeholder: "اپنا ای میل درج کریں"
+       p_placeholder: "اپنا پاس ورڈ درج کریں"
+       rp_placeholder: "اپنا پاس ورڈ دہرائیں"
+       fname_placeholder: "اپنا پہلا نام درج کریں"
+       lname_placeholder: "اپنا آخری نام درج کریں"

@@ -1,4 +1,5 @@
-
+<%= link_to 'English', new_user_path( locale: :en), class: "btn btn-primary", type: "button " %>
+<%= link_to 'Urdu', new_user_path( locale: :ur), class: "btn btn-primary", type: "button " %>
     <div class="container h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-12 col-md-9 col-lg-7 col-xl-6">
@@ -54,34 +55,34 @@
 
                 <div class="form-outline mb-4">
 <!--                  <input type="text" id="form3Example1cg" class="form-control form-control-lg" />-->
-                  <%= f.text_field :first_name, placeholder: "Enter your first name", autofocus: true , class: "form-control form-control-lg", id: "form3Example1cg" %>
+                  <%= f.text_field :first_name, placeholder: "#{I18n.t 'activerecord.attributes.new.fname_placeholder'}", autofocus: true , class: "form-control form-control-lg", id: "form3Example1cg" %>
 <!--                  <label class="form-label" for="form3Example1cg">Your Name</label>-->
                 </div>
 
                 <div class="form-outline mb-4">
 <!--                  <input type="email" id="form3Example3cg" class="form-control form-control-lg" />-->
-                  <%= f.text_field :last_name, placeholder: "Enter your last name" , class: "form-control form-control-lg", id: "form3Example1cg" %>
+                  <%= f.text_field :last_name, placeholder: "#{I18n.t 'activerecord.attributes.new.lname_placeholder'}" , class: "form-control form-control-lg", id: "form3Example1cg" %>
 
                   <!--                  <label class="form-label" for="form3Example3cg">Your Email</label>-->
                 </div>
 
                 <div class="form-outline mb-4">
                   <!--                  <input type="email" id="form3Example3cg" class="form-control form-control-lg" />-->
-                  <%= f.text_field :email, placeholder: "Enter your email", class: "form-control form-control-lg", id: "form3Example1cg" %>
+                  <%= f.text_field :email, placeholder: "#{I18n.t 'activerecord.attributes.new.e_placeholder'}", class: "form-control form-control-lg", id: "form3Example1cg" %>
 
                   <!--                  <label class="form-label" for="form3Example3cg">Your Email</label>-->
                 </div>
 
                 <div class="form-outline mb-4">
 <!--                  <input type="password" id="form3Example4cg" class="form-control form-control-lg" />-->
-                  <%= f.text_field :password, placeholder: "Enter your password", class: "form-control form-control-lg", id: "form3Example1cg" %>
+                  <%= f.text_field :password, placeholder: "#{I18n.t 'activerecord.attributes.new.p_placeholder'}", class: "form-control form-control-lg", id: "form3Example1cg" %>
 
                   <!--                  <label class="form-label" for="form3Example4cg">Password</label>-->
                 </div>
 
                 <div class="form-outline mb-4">
 <!--                  <input type="password" id="form3Example4cdg" class="form-control form-control-lg" />-->
-                  <%= f.text_field :password_confirmation , placeholder: "Repeat your password", class: "form-control form-control-lg", id: "form3Example1cg" %>
+                  <%= f.text_field :password_confirmation , placeholder: "#{I18n.t 'activerecord.attributes.new.rp_placeholder'}", class: "form-control form-control-lg", id: "form3Example1cg" %>
 
 <!--                                    <label class="form-label" for="form3Example4cdg">Repeat your password</label>-->
                 </div>
@@ -92,7 +93,7 @@
 
                 </div>
 
-                <p class="text-center text-muted mt-5 mb-0">Have already an account?
+                <p class="text-center text-muted mt-5 mb-0"><%= t "logins.new.services_html2" %>
 <!--                  <a href="#!" class="fw-bold text-body"><u>Login here</u></a>-->
                   <%= link_to 'Login Here', login_path, class: "fw-bold text-body" %>
                 </p>

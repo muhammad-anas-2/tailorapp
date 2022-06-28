@@ -1,20 +1,24 @@
 <section class="vh-100">
   <div class="container-fluid h-custom">
+    <li><%= link_to 'English', login_path(locale: :en) %></li>
+    <li><%= link_to 'Urdu', login_path(locale: :ur) %></li>
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-md-9 col-lg-6 col-xl-5">
         <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
              class="img-fluid" alt="Sample image">
       </div>
+
       <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-        <%= form_for(:logins, html: {class: "col s12"}) do |f| %>
+<!--        <h1> <%#= t 'logins.new.hello' %></h1>-->
+        <%= form_for( :logins, html: {class: "col s12"}) do |f| %>
 
 
           <!-- Email input -->
           <div class="form-outline mb-4">
 <!--            <input type="email" id="form3Example3" class="form-control form-control-lg" placeholder="Enter a valid email address" />-->
 <!--            <label class="form-label" for="form3Example3">Email address</label>-->
-            <%= f.label :email , class: "form-label", for: "form3Example3" %>
-            <%= f.text_field :email, placeholder: "Enter your valid email address" ,autofocus:'true', class: "form-control form-control-lg", id: "form3Example3"%>
+            <%=  f.label t 'activerecord.attributes.new.email', class: "form-label", for: "form3Example3" %>
+            <%= f.text_field :email, placeholder: "#{I18n.t 'activerecord.attributes.new.e_placeholder'}" ,autofocus:'true', class: "form-control form-control-lg", id: "form3Example3"%>
           </div>
           <br>
           <!-- Password input -->
@@ -22,8 +26,8 @@
 <!--            <input type="password" id="form3Example4" class="form-control form-control-lg"-->
 <!--                   placeholder="Enter password" />-->
 <!--            <label class="form-label" for="form3Example4">Password</label>-->
-            <%= f.label :password , class: "form-label", for: "form3Example3" %>
-            <%= f.text_field :password, placeholder: "Enter password", class: "form-control form-control-lg", id: "form3Example3"%>
+            <%= f.label t 'activerecord.attributes.new.password' , class: "form-label", for: "form3Example3" %>
+            <%= f.text_field :password, placeholder: "#{I18n.t 'activerecord.attributes.new.p_placeholder'}", class: "form-control form-control-lg", id: "form3Example3"%>
           </div>
           <br>
 <!--          <div class="d-flex justify-content-between align-items-center">-->
@@ -42,7 +46,7 @@
             <%= f.button 'Log In'.html_safe,  class: "btn btn-primary btn-lg", role: "button" %>
             <br>
             <br>
-            <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account?
+            <p class="small fw-bold mt-2 pt-1 mb-0"><%= t ".services_html" %>
 
               <%= link_to 'Register',new_user_path, class: "link-danger" %>
             </p>
