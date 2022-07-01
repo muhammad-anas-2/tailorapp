@@ -13,5 +13,15 @@
 //= require jquery
 //= require jquery_ujs
 //= require home
+//= require jquery-library.js
+//= require bootstrap.min.js
+//= require jquery.flipster.min.js
+//= require owl.carousel.min.js
+//= require pogoslider.js
+//= require jquery-ui.js
+//= require countTo.js
+//= require appear.js
+//= require gmap3.js
+//= require main.js
 //= require turbolinks
 //= require_tree .
