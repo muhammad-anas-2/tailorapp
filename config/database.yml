@@ -85,5 +85,5 @@ test:
 production:
   <<: *default
   database: TheTailorApp_production
-  username: TheTailorApp
+  username: postgres
   password: <%= ENV['THETAILORAPP_DATABASE_PASSWORD'] %>
