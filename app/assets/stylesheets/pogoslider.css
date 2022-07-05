@@ -1168,7 +1168,8 @@
 	}
 }
 .ps1{
-	background:url(slider/img-08.jpg) no-repeat scroll 0 0;
+	/*background:url(slider/img-08.jpg)  no-repeat scroll 0 0;*/
+	background-image: url( "slider/img-08.jpg") ;
 }
 .ps2{
 	background:url(slider/img-07.jpg) no-repeat scroll 0 0;
