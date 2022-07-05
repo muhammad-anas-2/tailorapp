@@ -48,17 +48,17 @@
               </div>
               <div id="tg-navigation" class="collapse navbar-collapse tg-navigation">
                 <ul>
-                  <li class="menu-item-has-children current-menu-item">
+                  <li class=" current-menu-item">
                     <a href="javascript:void(0);">hOME</a>
-                    <ul class="sub-menu">
-                      <li class="current-menu-item"><a href="index.html">Home-1</a></li>
-                      <li><a href="indexv2.html">Home-2</a></li>
-                    </ul>
+<!--                    <ul class="sub-menu">-->
+<!--                      <li class="current-menu-item"><a href="index.html">Home-1</a></li>-->
+<!--                      <li><a href="indexv2.html">Home-2</a></li>-->
+<!--                    </ul>-->
                   </li>
-                  <li><a href="shirt.html">Shirts</a></li>
+                  <li><a href="shirt.html">Suits</a></li>
                   <li><a href="blazers.html">Blazers</a></li>
-                  <li><a href="pants.html">Pants</a></li>
-                  <li><a href="howitwork.html">How It Works</a></li>
+                  <li><a href="pants.html">Shalwaar Kameezs</a></li>
+<!--                  <li><a href="howitwork.html">How It Works</a></li>-->
                   <li><a href="contactus.html">Contact</a></li>
                   <li class="menu-item-has-children">
                     <a href="javascript:void(0);"><i class="fa fa-ellipsis-h"></i></a>
@@ -79,15 +79,17 @@
                         </ul>
                       </li>
                       <li><a href="aboutus.html">About</a></li>
-                      <li><a href="404.html">404</a></li>
-                      <li><a href="comingsoon.html">coming soon</a></li>
+<!--                      <li><a href="404.html">404</a></li>-->
+<!--                      <li><a href="comingsoon.html">coming soon</a></li>-->
                     </ul>
                   </li>
                 </ul>
               </div>
             </nav>
 <!--            <a class="tg-btn tg-btnstartcustomizing" href="http://www.codezel.com/tailors-online/customizer/?pid=8" target="_blank"><span>new</span>Start Customizing</a>-->
-            <%= link_to 'Start Customizing', new_user_path, class: "tg-btn tg-btnstartcustomizing", target: "_blank", span: 'new' %>
+            <%= link_to 'Signup', new_user_path, class: "tg-btn tg-btnstartcustomizing", target: "_blank", span: 'new' %>
+            <%= link_to 'Client', login_path, class: "tg-btn tg-btnstartcustomizing", target: "_blank", span: 'new', style: 'margin: 0 10px' %>
+
           </div>
         </div>
       </div>
