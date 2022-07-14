@@ -49,17 +49,17 @@
               <div id="tg-navigation" class="collapse navbar-collapse tg-navigation">
                 <ul>
                   <li class=" current-menu-item">
-                    <a href="javascript:void(0);">hOME</a>
+                    <a href="javascript:void(0);"><%= link_to 'Home', root_path %></a>
 <!--                    <ul class="sub-menu">-->
 <!--                      <li class="current-menu-item"><a href="index.html">Home-1</a></li>-->
 <!--                      <li><a href="indexv2.html">Home-2</a></li>-->
 <!--                    </ul>-->
                   </li>
-                  <li><a href="shirt.html">Suits</a></li>
-                  <li><a href="blazers.html">Blazers</a></li>
+                  <li><%= link_to 'Suits', welcome_suit_path %></li>
+                  <li><%= link_to 'Blazers', welcome_blazzer_path %></li>
                   <li><a href="pants.html">Shalwaar Kameezs</a></li>
 <!--                  <li><a href="howitwork.html">How It Works</a></li>-->
-                  <li><a href="contactus.html">Contact</a></li>
+                  <li><%= link_to 'Contact', welcome_contactus_path %></li>
                   <li class="menu-item-has-children">
                     <a href="javascript:void(0);"><i class="fa fa-ellipsis-h"></i></a>
                     <ul class="sub-menu">

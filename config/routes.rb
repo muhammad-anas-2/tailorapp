@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'welcome#home', to: 'welcome#home'
   get 'welcome/about'
+  get 'welcome/contactus'
+  get 'welcome/suit'
+  get 'welcome/blazzer'
   resources :clients
   resources :users
   get 'login', to: 'logins#new'
