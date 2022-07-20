@@ -31,7 +31,7 @@
 	}
 	.tg-nav,
 	.tg-btn.tg-btnstartcustomizing{
-		float: none;
+		float: inherit;
 		display: inline-block;
 		vertical-align: middle;
 	}

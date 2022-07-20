@@ -3,21 +3,24 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <ul class="tg-addressinfo">
-            <li>
-              <i class="fa-solid fa-location-dot"></i>
-              <address>14 Tottenham Court Road, Manchester</address>
-            </li>
-            <li>
-              <i class="fa-solid fa-clock"></i>
-              <time datetime="2016-10-10">Mon - Sat 9:00 - 17:00</time>
-            </li>
-            <li>
-              <i class="fa-solid fa-phone"></i>
-              <span>+4 1234 567890</span>
-            </li>
-          </ul>
-          <ul class="tg-socialicons">
+          <%= link_to 'Signup', new_user_path, class: "tg-btn tg-btnstartcustomizing", target: "_blank", span: 'new', style: ' float: right' %>
+          <%= link_to 'Client', login_path, class: "tg-btn tg-btnstartcustomizing", target: "_blank", span: 'new', style: 'margin: 0 10px; float: right' %>
+
+          <!--          <ul class="tg-addressinfo">-->
+<!--            <li>-->
+<!--              <i class="fa-solid fa-location-dot"></i>-->
+<!--              <address>14 Tottenham Court Road, Manchester</address>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <i class="fa-solid fa-clock"></i>-->
+<!--              <time datetime="2016-10-10">Mon - Sat 9:00 - 17:00</time>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--              <i class="fa-solid fa-phone"></i>-->
+<!--              <span>+4 1234 567890</span>-->
+<!--            </li>-->
+<!--          </ul>-->
+          <ul class="tg-socialicons ">
             <li class="tg-facebook"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
             <li class="tg-twitter"><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
             <li class="tg-linkedin"><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
@@ -55,40 +58,41 @@
 <!--                      <li><a href="indexv2.html">Home-2</a></li>-->
 <!--                    </ul>-->
                   </li>
+                  <li><%= link_to 'About', welcome_suit_path %></li>
                   <li><%= link_to 'Suits', welcome_suit_path %></li>
-                  <li><%= link_to 'Blazers', welcome_blazzer_path %></li>
-                  <li><a href="pants.html">Shalwaar Kameezs</a></li>
-<!--                  <li><a href="howitwork.html">How It Works</a></li>-->
+                  <li><%= link_to 'Pants', welcome_blazzer_path %></li>
+                  <li><%= link_to 'Shirts', welcome_blazzer_path %></li>
+                  <li><%= link_to 'Add-ons', welcome_blazzer_path %></li>
+                  <li><%= link_to 'Shop', welcome_blazzer_path %></li>
                   <li><%= link_to 'Contact', welcome_contactus_path %></li>
-                  <li class="menu-item-has-children">
-                    <a href="javascript:void(0);"><i class="fa fa-ellipsis-h"></i></a>
-                    <ul class="sub-menu">
-                      <li class="menu-item-has-children">
-                        <a href="javascript:void(0);">shop</a>
-                        <ul class="sub-menu">
-                          <li><a href="shop.html">shop</a></li>
-                          <li><a href="shopdetail.html">Product Detail</a></li>
-                        </ul>
-                      </li>
-                      <li class="menu-item-has-children">
-                        <a href="javascript:void(0);">blog</a>
-                        <ul class="sub-menu">
-                          <li><a href="newsgrid.html">blog grid</a></li>
-                          <li><a href="newslist.html">blog list</a></li>
-                          <li><a href="newsdetail.html">blog detail</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="aboutus.html">About</a></li>
+<!--                  <li class="menu-item-has-children">-->
+<!--                    <a href="javascript:void(0);"><i class="fa fa-ellipsis-h"></i></a>-->
+<!--                    <ul class="sub-menu">-->
+<!--                      <li class="menu-item-has-children">-->
+<!--                        <a href="javascript:void(0);">shop</a>-->
+<!--                        <ul class="sub-menu">-->
+<!--                          <li><a href="shop.html">shop</a></li>-->
+<!--                          <li><a href="shopdetail.html">Product Detail</a></li>-->
+<!--                        </ul>-->
+<!--                      </li>-->
+<!--                      <li class="menu-item-has-children">-->
+<!--                        <a href="javascript:void(0);">blog</a>-->
+<!--                        <ul class="sub-menu">-->
+<!--                          <li><a href="newsgrid.html">blog grid</a></li>-->
+<!--                          <li><a href="newslist.html">blog list</a></li>-->
+<!--                          <li><a href="newsdetail.html">blog detail</a></li>-->
+<!--                        </ul>-->
+<!--                      </li>-->
 <!--                      <li><a href="404.html">404</a></li>-->
 <!--                      <li><a href="comingsoon.html">coming soon</a></li>-->
-                    </ul>
-                  </li>
+<!--                    </ul>-->
+<!--                  </li>-->
                 </ul>
               </div>
             </nav>
 <!--            <a class="tg-btn tg-btnstartcustomizing" href="http://www.codezel.com/tailors-online/customizer/?pid=8" target="_blank"><span>new</span>Start Customizing</a>-->
-            <%= link_to 'Signup', new_user_path, class: "tg-btn tg-btnstartcustomizing", target: "_blank", span: 'new' %>
-            <%= link_to 'Client', login_path, class: "tg-btn tg-btnstartcustomizing", target: "_blank", span: 'new', style: 'margin: 0 10px' %>
+            <%#= link_to 'Signup', new_user_path, class: "tg-btn tg-btnstartcustomizing", target: "_blank", span: 'new' %>
+            <%#= link_to 'Client', login_path, class: "tg-btn tg-btnstartcustomizing", target: "_blank", span: 'new', style: 'margin: 0 10px' %>
 
           </div>
         </div>

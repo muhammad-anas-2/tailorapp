@@ -740,7 +740,7 @@ li.tg-rss a:hover{background:#ff6600;}
 	padding: 0 10px 0 0;
 }
 .tg-topbar .tg-socialicons{
-	float: right;
+	float: left;
 	padding: 10px 0;
 }
 .tg-topbar .tg-socialicons li a{background: rgba(0,0,0,0.10);}
