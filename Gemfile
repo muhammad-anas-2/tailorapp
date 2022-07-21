@@ -18,6 +18,7 @@ gem 'rails-i18n'
 gem 'bcrypt', '~> 3.1.16'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
+gem "recaptcha", require: "recaptcha/rails"
 # Use SCSS for stylesheets
 
 gem 'sass-rails', '~> 5.0'
