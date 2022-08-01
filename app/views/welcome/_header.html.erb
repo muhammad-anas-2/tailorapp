@@ -51,18 +51,21 @@
               </div>
               <div id="tg-navigation" class="collapse navbar-collapse tg-navigation">
                 <ul>
+
                   <li class=" current-menu-item">
                     <%= link_to 'Home', root_path %>
-<!--                    <ul class="sub-menu">-->
-<!--                      <li class="current-menu-item"><a href="index.html">Home-1</a></li>-->
-<!--                      <li><a href="indexv2.html">Home-2</a></li>-->
-<!--                    </ul>-->
+
                   </li>
-                  <li><%= link_to 'About', welcome_about_path %></li>
-                  <li><%= link_to 'Suits', welcome_suit_path %></li>
-                  <li><%= link_to 'Pants', welcome_blazzer_path %></li>
-                  <li><%= link_to 'Shirts', welcome_blazzer_path %></li>
-                  <li><%= link_to 'Add-ons', welcome_blazzer_path %></li>
+                  <li><%= link_to 'About', welcome_about_path %>
+                  <li class="menu-item-has-children ">
+                    <a href="javascript:void(0);"><%= link_to 'Fashion', root_path %></a>
+                    <ul class="sub-menu">
+                      <li><%= link_to 'Suits', welcome_suit_path %></li>
+                      <li><%= link_to 'Pants', welcome_blazzer_path %></li>
+                      <li><%= link_to 'Shirts', welcome_blazzer_path %></li>
+                      <li><%= link_to 'Add-ons', welcome_blazzer_path %></li>
+                    </ul>
+                  </li>
                   <li><%= link_to 'Shop', welcome_blazzer_path %></li>
                   <li><%= link_to 'Contact', welcome_contactus_path %></li>
 <!--                  <li class="menu-item-has-children">-->

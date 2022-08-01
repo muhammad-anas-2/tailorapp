@@ -6,6 +6,9 @@ class WelcomeController < ApplicationController
   def contactus
 
   end
+  def signin_signup
+
+  end
 
   def about
 

@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'welcome/contactus'
   get 'welcome/suit'
   get 'welcome/blazzer'
+  get 'welcome/signin_signup'
   resources :clients
   resources :users
   get 'login', to: 'logins#new'
